@@ -24,5 +24,14 @@ main(){
   int number= 1;
   String numberStr= number.toString();
   print(numberStr);
+
+  var numberFromClass= Num();
+  var checkForNull = numberFromClass?.num ?? "null value"; //This means: numberFromClass?.num check if is null or not
+                                                           // ?? check if null, if not return the value otherwise return the string
+  print(checkForNull);
   
+}
+
+class Num{
+  var num=100;
 }
