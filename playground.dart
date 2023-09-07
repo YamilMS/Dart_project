@@ -25,10 +25,41 @@ main(){
   String numberStr= number.toString();
   print(numberStr);
 
-  var numberFromClass= Num();
+  var numberFromClass= Num(); //instance of the class null that is after the main class
   var checkForNull = numberFromClass?.num ?? "null value"; //This means: numberFromClass?.num check if is null or not
                                                            // ?? check if null, if not return the value otherwise return the string
   print(checkForNull);
+
+  var numberNull = null;
+  print(numberNull ??= 100); //check if it is null and if it is assign 100 to the variable
+  print(numberNull);
+
+  //Dart can use ternary operator and switch statements the same as JavaScript
+
+  //in the line 34 we make numberNull an integer so the if will be executed
+  if(numberNull is int){
+    print("numberNull is an integer");
+  } else{
+    print("numberNull is not an integer");
+  }
+  print("");
+  //LOOPS
+  var array = ["pikachu", "charmander", "bulbasur", "squirtle"];
+  for(var i=0; i<array.length; i++){
+    var element= array[i];
+    print("$element is index $i");
+  }
+
+  print("");
+
+  for(var j in array){
+    if(j == "bulbasur"){
+      break;
+    }
+    print(j);
+  }
+
+
   
 }
 
