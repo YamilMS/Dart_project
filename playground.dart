@@ -44,7 +44,7 @@ main(){
   }
   print("");
   //LOOPS
-  var array = ["pikachu", "charmander", "bulbasur", "squirtle"];
+  var array = ["pikachu", "charmander", "bulbasur", "squirtle"];//By type inference assign List
   for(var i=0; i<array.length; i++){
     var element= array[i];
     print("$element is index $i");
@@ -59,6 +59,21 @@ main(){
     print(j);
   }
 
+  //Arrays, Collects and so on
+
+  //List are mutables and also can be assign a type
+  List <String> names=["Goku", "Picolo", "Vegeta"];
+
+  //To copy a List
+  List names2 = [...names];
+
+  //Change the first List
+  names[1]= "Trunks";
+
+  //print the second list and assert that is not a reference of the first List
+  for(String i in names2){
+    print(i);
+  }
 
   
 }
