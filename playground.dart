@@ -74,7 +74,15 @@ main(){
   for(String i in names2){
     print(i);
   }
+  
+  //Dart also acept sets like python, also can be declared: var hashmap= Map();
+  var hashmap= {}; //If you declare like this is going to be a hashmap
+  var set= <String>{}; //In you do it like this is a set
+  Set properSet={}; //Also this one is a set
 
+  hashmap["test"]= "it worked"; //I am adding something to the hasmap
+
+  print(hashmap["test"]);
   
 }
 
