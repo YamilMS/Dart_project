@@ -83,9 +83,26 @@ main(){
   hashmap["test"]= "it worked"; //I am adding something to the hasmap
 
   print(hashmap["test"]);
+
+  //Functions
+
+  //Arrow function
+  print(arrowFuncSquare(2));
+
+  //Name parameters
+  printNameParameters(name2: "Rebe", name1: "Yamil");
   
 }
 
+//Class
 class Num{
   var num=100;
 }
+
+//FUNCTIONS
+
+//arrow function
+dynamic arrowFuncSquare (var num) => num*num;
+
+//function using name parameters
+void printNameParameters ({name1, name2})=> print("$name1 meets $name2");
